@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style/style.css" />
+    <link rel="shortcut icon" href="images/jar.png" type="image/x-icon" />
+    <title>Candles Shop</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- main image and text -->
+      <div class="image-container">
+        <picture>
+          <source
+            srcset="images/main-candles-small.jpg"
+            media="(max-width: 640px)"
+          />
+          <source
+            srcset="images/main-candles-large.jpg"
+            media="(min-width: 641px)"
+          />
+          <img src="images/main-candles-large.jpg" alt="candles-main-photo" />
+        </picture>
+        <div class="overlay-text">
+          <h1>Candles Shop</h1>
+          <p>Handmade candles</p>
+        </div>
+      </div>
+      <!-- intro  -->
+      <div class="intro-container">
+        <h1>For those, who:</h1>
+        <ul>
+          <li>Loves beauty and aesthetics</li>
+          <li>Values environmental friendliness</li>
+          <li>Wants to create a cozy space</li>
+        </ul>
+        <button class="btn-look">Look</button>
+      </div>
+      <!-- information -->
+      <div class="info-container">
+        <h1>How did this project come about?</h1>
+
+        <picture>
+          <source
+            srcset="images/secondary-candle-small.jpg"
+            media="(max-width: 640px)"
+          />
+          <source
+            srcset="images/secondary-candle-large.jpg"
+            media="(min-width: 641px)"
+          />
+          <img
+            src="images/secondary-candle-large.jpg"
+            alt="candles-secondary-photo"
+          />
+        </picture>
+        <div class="text-container">
+          <p>
+            Hi, my name is Kate. In While I was surfing on Instagram, I came
+            across a candle and my sense of beauty urgently informed me that we
+            needed such a candle. But I didn&#x2019;t have the opportunity to
+            order.
+          </p>
+          <p>
+            I couldn&#x2019;t forget about the candle, but the idea came to my
+            mind: “Maybe I can make it myself?” The planting was quite
+            impulsive. The preparation process for making a candle was long but
+            interesting.
+          </p>
+        </div>
+      </div>
+      <!-- products -->
+      <div class="products">
+        <h1>Candles</h1>
+        <div class="cards-container">
+          <div class="candle-card">
+            <p>Candle name 1</p>
+            <img src="images/product-1.jpg" alt="candle product 1" />
+            <p>10 USD</p>
+          </div>
+          <div class="candle-card">
+            <p>Candle name 2</p>
+            <img src="images/product-2.jpg" alt="candle product 2" />
+            <p>10 USD</p>
+          </div>
+          <div class="candle-card">
+            <p>Candle name 3</p>
+            <img src="images/product-3.jpg" alt="candle product 3" />
+            <p>10 USD</p>
+          </div>
+          <div class="candle-card">
+            <p>Candle name 4</p>
+            <img src="images/product-4.jpg" alt="candle product 4" />
+            <p>10 USD</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
