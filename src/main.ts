@@ -1,9 +1,12 @@
-document.querySelectorAll(".question svg").forEach((svg: Element) => {
-  svg.addEventListener("click", function (this: SVGElement) {
-    const answer = (this.parentNode as HTMLElement | null)?.nextElementSibling;
+document.querySelectorAll(".question").forEach((question: Element) => {
+  question.addEventListener("click", function (this: HTMLElement) {
+    const answer = this.nextElementSibling;
     if (answer) {
       answer.classList.toggle("show");
-      this.classList.toggle("rotated");
+      const svg = this.querySelector("svg");
+      if (svg) {
+        svg.classList.toggle("rotated");
+      }
     }
   });
 });
